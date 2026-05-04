@@ -4,8 +4,8 @@ import { useAuth } from '../context/AuthContext';
 import { LogIn, User, Lock, AlertCircle } from 'lucide-react';
 
 const Login = () => {
-  const [username, setUsername] = useState('emilys'); // Pre-filled for demo
-  const [password, setPassword] = useState('emilyspass');
+  const [username, setUsername] = useState('Muhammad Owais'); // Pre-filled for demo
+  const [password, setPassword] = useState('owais123');
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   
@@ -87,8 +87,8 @@ const Login = () => {
         {/* Demo Credentials Box */}
         <div style={{ background: 'rgba(255, 255, 255, 0.2)', border: '1px solid rgba(255, 255, 255, 0.4)', color: '#4A3320', padding: '1rem', borderRadius: '12px', marginBottom: '1.5rem' }}>
           <p style={{ margin: '0 0 0.5rem 0', fontWeight: '600', color: '#3B2818' }}>Demo Credentials:</p>
-          <p style={{ margin: '0 0 0.25rem 0', fontSize: '0.875rem' }}><strong>Username/Email:</strong> emilys</p>
-          <p style={{ margin: 0, fontSize: '0.875rem' }}><strong>Password:</strong> emilyspass</p>
+          <p style={{ margin: '0 0 0.25rem 0', fontSize: '0.875rem' }}><strong>Username/Email:</strong> Muhammad Owais</p>
+          <p style={{ margin: 0, fontSize: '0.875rem' }}><strong>Password:</strong> owais123</p>
         </div>
 
         <form onSubmit={handleSubmit}>

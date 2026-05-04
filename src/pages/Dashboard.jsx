@@ -12,6 +12,13 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
+        const storedUser = JSON.parse(localStorage.getItem('user'));
+        if (storedUser && storedUser.firstName === 'Muhammad') {
+          setProfileData(storedUser);
+          setLoading(false);
+          return;
+        }
+
         const response = await api.get('/auth/me');
         setProfileData(response.data);
       } catch (err) {
